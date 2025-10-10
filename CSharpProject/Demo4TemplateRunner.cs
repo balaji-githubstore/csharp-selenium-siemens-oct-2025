@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpProject
 {
-    public class Demo1Runner
+    public class Demo4TemplateRunner
     {
         static void Main(string[] args)
         {

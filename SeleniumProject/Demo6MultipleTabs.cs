@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SeleniumProject
 {
-    internal class Demo6MultipleTabs
+    public class Demo6MultipleTabs
     {
+        //will start at 11:25 AM IST
     }
 }
