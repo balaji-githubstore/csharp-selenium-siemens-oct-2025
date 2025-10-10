@@ -1,0 +1,49 @@
+XPath 
+
+Absolute XPath (not recommended) - /html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[4]/span/span[3]/label/input 
+
+Relative XPath - 
+//tagname[@attribute='']
+//tagname[text()='']
+
+
+Contains - white space won't get ignored
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+
+normalize-space - ignore whitespace and check for the text
+//tagname[normalize-space()='']
+//tagname[contains(normalize-space(),'')]
+
+Grouping the xpath - starts at 1
+(//input[@name='sex'])[3]
+
+
+And-or 
+
+
+parent-child 
+
+
+ancestor-descendant
+
+
+following-preceding
+//tagname[@attribute='']/following::tagname
+//input[@name='UserEmail']/following::div[@class='checkbox-ui']
+
+following sibling 
+
+
+
+
+Example: verify in chrome - ctrl+f
+//input[@value='-1']
+//label[text()='Custom']
+//button[text()='Sign Up']
+
+//input[contains(@id,'UserLast')]
+
+//button[normalize-space()='Login']
+//button[contains(normalize-space(),'Log')]

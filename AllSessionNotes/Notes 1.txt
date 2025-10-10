@@ -1,0 +1,113 @@
+Installation
+Architecture 
+Datatypes 
+Conditional and iterative statements  
+Methods and variable - Static vs Non-static 
+Static vs Non static concepts 
+Class & Object 
+
+
+
+Encapsulation
+Inheritance 
+Polymorphism (Static (method overloading) vs Dynamic (method overriding))
+Abstraction 
+	abstract class 
+	interface 
+
+-----
+
+How to call the static methods/fields/property?
+Classname.MethodName()
+
+How to call the non-static methods/fields/property?
+1. create object
+2. objref.MethodName()
+
+
+
+
+
+---------------------
+Class 
+	static variable 
+	non-static variable 
+
+	static methods 
+	non-static methods 
+	
+	static property 
+	non-static property 
+
+	constructor 
+
+-----------------------
+
+Employee 
+	empId
+	empName
+	empSalary
+	empPerformance
+	companyName
+	
+
+(101, Saul, 9000, A, Siemens)
+(102, Kim, 5000, B, Siemens)
+(103, Peter, 4000, C, Siemens)
+
+
+
+----------------------------------------
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+class ChromeDriver 
+
+non-static methods/properties
+	string Url{get;set;} 
+	string Title{get;} 
+
+	void Quit()
+	void Close()
+	IWebElement FindElement(By locator)
+
+
+
+class - By 
+static methods 
+	Id(string id)
+	Name(string name)
+	ClassName
+	TagName
+	LinkText
+	PartialLinkText
+
+
+
+ele--> L1 -->(
+<input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal-email" placeholder="Email address or phone number" autofocus="1" aria-label="Email address or phone number">
+)
+
+
+
+
+
+
+
+
+
+
+"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe"
+
+
+
+     ChromeOptions options = new ChromeOptions();
+     options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";
+
+     IWebDriver obj = new ChromeDriver(options);
+
