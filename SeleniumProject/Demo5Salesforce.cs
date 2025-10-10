@@ -11,7 +11,7 @@ namespace SeleniumProject
 {
     public class Demo5Salesforce
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             ChromeOptions options = new ChromeOptions();
             options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";

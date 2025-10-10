@@ -12,6 +12,19 @@ namespace ECartApplication
         private string _description;
         private double _price;
         private int _quanity;
+        private string[] _products; 
+
+        public string[] Products
+        {
+            get
+            {
+                return _products;
+            }
+            set
+            {
+                _products = value;
+            }
+        }
 
         public Item(int quanity)
         {

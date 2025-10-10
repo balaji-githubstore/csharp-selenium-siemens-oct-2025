@@ -34,6 +34,12 @@ namespace ECartApplication
             
             Console.WriteLine(item2.Quantity);
 
+            item1.Products = new string[2] { "watch", "box" };
+
+
+            Console.WriteLine(item1.Products[0]);
+
+            Console.WriteLine(item1.Products[1]);
         }
     }
 }
