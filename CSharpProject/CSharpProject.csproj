@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="TemplateProject">
-      <HintPath>..\TemplateProject\bin\Debug\net8.0\TemplateProject.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\TemplateProject\TemplateProject.csproj" />
   </ItemGroup>
 
 </Project>

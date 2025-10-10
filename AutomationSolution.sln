@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject", "CSharpProject\CSharpProject.csproj", "{CEFA1887-6407-467A-AED9-3003002AB657}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject2", "CSharpProject2\CSharpProject2.csproj", "{59F23F5E-C329-4BCE-94A3-922570138859}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject", "CSharpProject2\CSharpProject.csproj", "{59F23F5E-C329-4BCE-94A3-922570138859}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{E3420A7A-6DA4-4350-BDE6-4E4901824605}"
 EndProject
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEFA1887-6407-467A-AED9-3003002AB657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEFA1887-6407-467A-AED9-3003002AB657}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEFA1887-6407-467A-AED9-3003002AB657}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEFA1887-6407-467A-AED9-3003002AB657}.Release|Any CPU.Build.0 = Release|Any CPU
 		{59F23F5E-C329-4BCE-94A3-922570138859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{59F23F5E-C329-4BCE-94A3-922570138859}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59F23F5E-C329-4BCE-94A3-922570138859}.Release|Any CPU.ActiveCfg = Release|Any CPU

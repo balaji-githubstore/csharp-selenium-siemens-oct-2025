@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Siemens.CSharpProject
 {
-    public class Program
+    public class Demo0Datatypes
     {
         static void Main1(string[] args)
         {
