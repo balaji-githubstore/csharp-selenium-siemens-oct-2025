@@ -10,7 +10,7 @@ namespace SeleniumProject
 {
     public class Demo2FBLogin
     {
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             ChromeOptions options = new ChromeOptions();
             options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";

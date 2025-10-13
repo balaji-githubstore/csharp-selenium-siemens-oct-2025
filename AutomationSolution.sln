@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumProject", "Selenium
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject", "CSharpProject\CSharpProject.csproj", "{81F8EA41-2FC9-2E9D-1746-0108DBF00034}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumAdvanceProject", "SeleniumAdvanceProject\SeleniumAdvanceProject.csproj", "{6B95A189-3A96-4252-966E-BBAFD05033D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{81F8EA41-2FC9-2E9D-1746-0108DBF00034}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81F8EA41-2FC9-2E9D-1746-0108DBF00034}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81F8EA41-2FC9-2E9D-1746-0108DBF00034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B95A189-3A96-4252-966E-BBAFD05033D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B95A189-3A96-4252-966E-BBAFD05033D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B95A189-3A96-4252-966E-BBAFD05033D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B95A189-3A96-4252-966E-BBAFD05033D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

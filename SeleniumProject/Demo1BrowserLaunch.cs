@@ -21,8 +21,6 @@ namespace SeleniumProject
             ChromeOptions options = new ChromeOptions();
             options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";
 
-
-
             IWebDriver obj = new ChromeDriver(options);
 
             obj.Url = "https://www.facebook.com/";
