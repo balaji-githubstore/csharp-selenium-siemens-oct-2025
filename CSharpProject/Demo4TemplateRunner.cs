@@ -9,7 +9,7 @@ namespace CSharpProject
 {
     public class Demo4TemplateRunner
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("check");
 
