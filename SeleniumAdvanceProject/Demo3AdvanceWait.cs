@@ -9,35 +9,12 @@ using System.Threading.Tasks;
 
 namespace Siemens.SeleniumAdvanceProject
 {
-    public class Demo2AlertTest
+    public class Demo3AdvanceWait
     {
-        [Test]
-        public void DemoAlertTest()
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";
-
-            IWebDriver driver = new ChromeDriver(options);
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
-            driver.Navigate().GoToUrl("https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm");
-
-            //click on Go
-            driver.FindElement(By.XPath("//img[@alt='Go']")).Click();
-
-            //wait for alert is present
-            WebDriverWait wait = new WebDriverWait(driver,TimeSpan.FromSeconds(20));
-            wait.Until(x=>x.SwitchTo().Alert());
-
-            string actualText= driver.SwitchTo().Alert().Text;
-            Console.WriteLine(actualText);
-
-            driver.SwitchTo().Alert().Accept();
-        }
+ 
 
         [Test]
-        public void Demo2FBLogin()
+        public void Demo1FBLoginExplicitWaitTest()
         {
             ChromeOptions options = new ChromeOptions();
             options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";
@@ -59,7 +36,7 @@ namespace Siemens.SeleniumAdvanceProject
         }
 
         [Test]
-        public void Demo3FBLoginExplicitWait()
+        public void Demo2FBLoginFluentWaitTest()
         {
             ChromeOptions options = new ChromeOptions();
             options.BinaryLocation = @"D:\Balaji\Components\chrome-win64\chrome-win64\chrome.exe";
