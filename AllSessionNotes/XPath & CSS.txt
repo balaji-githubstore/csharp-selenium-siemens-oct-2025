@@ -13,14 +13,20 @@ Contains - white space won't get ignored
 
 
 normalize-space - ignore whitespace and check for the text
+
 //tagname[normalize-space()='']
 //tagname[contains(normalize-space(),'')]
 
 Grouping the xpath - starts at 1
 (//input[@name='sex'])[3]
 
+Upload
+//input[@type='file']
+
 
 And-or 
+//tagname[@attribute='' and @attribute='']
+//span[normalize-space()='Visit Our Support Center' and @class='subnav-title']
 
 
 parent-child 
@@ -42,8 +48,46 @@ Example: verify in chrome - ctrl+f
 //input[@value='-1']
 //label[text()='Custom']
 //button[text()='Sign Up']
-
 //input[contains(@id,'UserLast')]
-
 //button[normalize-space()='Login']
 //button[contains(normalize-space(),'Log')]
+//b[contains(normalize-space(),'phpMyAdmin')]
+(//span[normalize-space()='Visit Our Support Center'])[2]
+
+//frame[@name='login_page']
+//frame[contains(@src,'RSNBLogin')]
+
+
+-------------------------------------------
+
+
+
+html
+	button 0
+	frame 1
+		button 1
+	frame 2
+		frame 2.1 
+			button 2.1
+
+	
+
+html
+	frame 1 
+		frame 1.1 
+			textbox
+
+click button1
+then button 2.1
+then button 0
+
+
+
+
+
+
+
+
+
+
+

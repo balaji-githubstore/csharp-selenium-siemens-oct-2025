@@ -12,7 +12,6 @@ namespace Siemens.SeleniumAdvanceProject
     public class Demo3AdvanceWait
     {
  
-
         [Test]
         public void Demo1FBLoginExplicitWaitTest()
         {

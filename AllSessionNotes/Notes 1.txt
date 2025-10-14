@@ -8,7 +8,7 @@ Class & Object
 
 
 
-Encapsulation
+Encapsulation - achieved via properties 
 Inheritance 
 Polymorphism (Static (method overloading) vs Dynamic (method overriding))
 Abstraction 
