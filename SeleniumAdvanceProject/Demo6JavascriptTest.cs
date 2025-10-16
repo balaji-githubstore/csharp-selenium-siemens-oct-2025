@@ -45,7 +45,7 @@ namespace Siemens.SeleniumAdvanceProject
 
             driver.Url = "https://www.malaysiaairlines.com/us/en/home.html";
 
-            
+
             driver.FindElement(By.XPath("//span[text()='Accept all cookies']")).Click();
             //approach 1 - not works 
             //driver.FindElement(By.XPath("//div[@id='book-flight']//input[@name='dateDeparture']")).SendKeys("03 Dec 2025");
@@ -82,13 +82,25 @@ namespace Siemens.SeleniumAdvanceProject
             driver.FindElement(By.XPath("//span[text()='Accept all cookies']")).Click();
 
             //approach 3 - js 
-            IWebElement ele1= driver.FindElement(By.XPath("//div[@id='book-flight']//input[@name='dateDeparture']"));
+            IWebElement ele1 = driver.FindElement(By.XPath("//div[@id='book-flight']//input[@name='dateDeparture']"));
+            driver.ExecuteJavaScript("arguments[0].value='10 Dec 2023'", ele1);
+
             IWebElement ele2 = driver.FindElement(By.XPath("//div[@id='book-flight']//input[@name='dateReturn']"));
+            driver.ExecuteJavaScript("arguments[0].value='22 Dec 2023'", ele2);
 
-            driver.ExecuteJavaScript("arguments[0].value='12 Dec 2023'", ele1);
+            // driver.ExecuteJavaScript("arguments[0].value='12 Dec 2023';arguments[1].value='22 Dec 2023';", ele1,ele2);
 
-            driver.ExecuteJavaScript("arguments[0].value='22 Dec 2023'",ele2);
+            string attValue = driver.FindElement(By.XPath("//div[@id='book-flight']//input[@name='dateDeparture']")).GetAttribute("value");
+            Console.WriteLine(attValue);
 
+            //string value=driver.ExecuteJavaScript<string>("return document.querySelector('#main').value");
+            string value = driver.ExecuteJavaScript<string>("return document.querySelector(\"input[name='dateDeparture']\").value");
+            Console.WriteLine(value);
+
+            string value1 = driver.ExecuteJavaScript<string>("return document.title");
+            Console.WriteLine(value1);
         }
+
+
     }
 }
