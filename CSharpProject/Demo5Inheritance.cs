@@ -61,9 +61,67 @@ namespace CSharpProject
 
             Console.WriteLine(sonObj.gAge);
 
-           
+            //sonObj.Equals()
 
-        
+
+
+            int a = 111;
+            string b = "king";
+
+
+            object z = a; //boxing
+
+            object x = b; //boxing
+
+            object y = sonObj; //boxing
+
+
+            //object to specific datatype 
+
+            int a1 = (int)z;  //unboxing
+
+            Console.WriteLine(a1+a1);
+
+            string a2 = (string)x; //unboxing
+
+            Console.WriteLine(a2);
+
+            GrandSon a3 = (GrandSon)y; //unboxing
+
+            a3.FatherStyle();
+
+            object aa = 10; //boxing --> putting in the object type
+            object bb = "john";
+            object cc = 10.3;
+
+            double zz = (double)cc;  //object to double  //unboxing
+
+
+         
+            string[] arr3 = { "red", "yellow", "green" };
+
+        //    object[] demo = arr3;  //boxing
+
+            object[] abc = new object[4];
+            abc[0] = 45;
+            abc[1] = "jack";
+            abc[2] = sonObj;
+            abc[3] = arr3;
+
+
+            int demoabso = (int)abc[0];
+            Console.WriteLine(demoabso);
+
+
+
+            string[] arr4 = { "red", "yellow", "green" };
+
+
+            for(int i=0;i<arr4.Length;i++)
+            {
+                Console.WriteLine(arr4[i]);
+            }
+
         }
     }
 }
