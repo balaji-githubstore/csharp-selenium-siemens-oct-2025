@@ -50,5 +50,6 @@ namespace Siemens.SeleniumAdvanceProject
             var shadow1= driver.FindElement(By.CssSelector("page-builder-miaw-ui[deployment-dev-name='page_builder_miaw_ui']")).GetShadowRoot();
             shadow1.FindElement(By.CssSelector("button[aria-label='Minimize Agentforce']")).Click();
         }
+
     }
 }

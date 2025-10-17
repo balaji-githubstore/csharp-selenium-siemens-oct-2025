@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>SeleniumProject.Demo7MultipleTabs</StartupObject>
+    <StartupObject>SeleniumProject.Demo8MultipleTabs</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
