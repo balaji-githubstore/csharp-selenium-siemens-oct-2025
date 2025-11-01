@@ -35,13 +35,12 @@ Selenium WebDriver such as:
 
 ## 🧪 Python-Playwright
 **Repository:** [Python-Playwright](https://github.com/balaji-githubstore/python-playwright-siemens-oct-2025.git)
-Python and Playwright Concepts  
+- Python and Playwright Concepts  
 
 
 ## 🧪 Python-Pytest-Playwright
 **Repository:** [Python-Pytest](https://github.com/balaji-githubstore/python-pytest-siemens-oct-2025.git)
-Python and Pytest Framework Design Concepts  
-
+- Python and Pytest Framework Design Concepts  
 
 ## 👤 Author
 
