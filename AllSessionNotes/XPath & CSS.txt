@@ -24,22 +24,46 @@ Upload
 //input[@type='file']
 
 
-And-or 
+And-or
 //tagname[@attribute='' and @attribute='']
 //span[normalize-space()='Visit Our Support Center' and @class='subnav-title']
+//input[@type='file' and @id='edit-field-additional-document-0-upload']
 
 
-parent-child 
+parent-child
 
+parent - //img[@alt='Go']/../..
+child - 
+//table[@id='example']/tbody/tr[1]/td[2]
+//a[@id='main']/span/img
 
 ancestor-descendant
 
+ancestor - //tagname[@attribute='']/ancestor::tagname
+//img[@alt='Go']/ancestor::a
+
+descendant - 
+//table[@id='example']//tbody//tr[1]//td[2]
+
+
+//a[@id='main']/descendant::img
+or 
+//a[@id='main']//img  
+or 
+//a[@id='main']//img[@alt='Go']
+//div[@id='book-flight']//input[@aria-label="From"]
+
+
 
 following-preceding
-//tagname[@attribute='']/following::tagname
-//input[@name='UserEmail']/following::div[@class='checkbox-ui']
+following:
+//div[@class='checkbox-ui']
 
-following sibling 
+(//input[@name='UserEmail']/following::div[@class='checkbox-ui'])[1]
+
+following sibling
+//thead[@id='main']/following-sibling::tbody
+
 
 
 
@@ -58,7 +82,43 @@ Example: verify in chrome - ctrl+f
 //frame[contains(@src,'RSNBLogin')]
 
 
+//input[@name='dateDeparture']
+
+//div[@id='book-flight']//input[@name='dateDeparture']
 -------------------------------------------
+CSS - https://www.w3schools.com/cssref/css_selectors.php
+
+#id 
+.classname
+tagname[attribute='']
+[attribute='']
+
+
+descendant 
+div[id='book-flight'] input[name='dateDeparture']
+
+
+
+
+Example: 
+#email
+
+div[id='book-flight'] input[name='dateDeparture']
+
+
+
+
+--------------------------
+For Js - https://www.w3schools.com/js/js_htmldom_methods.asp
+--------------------------------
+Shadowroot
+
+document.querySelector("page-builder-miaw-ui[deployment-dev-name='page_builder_miaw_ui']").shadowRoot.querySelector("button[aria-label='Minimize Agentforce']")
+
+
+
+
+---------------------------------------------------
 
 
 
@@ -107,5 +167,69 @@ kim,kim123
 
 {{john,john123,Invalid credentials},{saul,saul123,Invalid credentials}}
 
+
+------------------
+Excel row 	object[]
+2		0
+3		1
+4		2
+5		3
+13		11
+
+
+
+
+
+Excel Row Col 		string[]	
+1 1
+1 2
+1 3 
+
+2 1
+2 2
+2 3 
+
+3 1
+3 2 
+3 3
+
+
+obj[]
+
+
+{{Kevin,	ffff,	Invalid credentials} , {Kim,	kim123,	Invalid credentials} }
+
+
+
+document.querySelector("#royal-olci > app-root > div > app-login-hybris > div > global-login").shadowRoot.querySelector("sign-in-form").shadowRoot.querySelector("section > a")
+
+
+document.querySelector("#royal-olci > app-root > div > app-login-hybris > div > global-login").shadowRoot.querySelector("create-account").shadowRoot.querySelector("section > form > input-text:nth-child(2)").shadowRoot.querySelector("#input-text-name")
+
+
+
+
+
+
+
+
+
+----------------------------------
+admin,pass,OpenEMR
+physician,physician, OpenEMR
+
+
+
+[[admin,pass,OpenEMR], [physician,physician, OpenEMR]]
+
+
+
+--------------------
+
+LoginUITest obj=new LoginUITest();  (obj---> (driver=chrome))
+
+
+obj.BeforeMethod() 
+obj.titletest()
 
 
