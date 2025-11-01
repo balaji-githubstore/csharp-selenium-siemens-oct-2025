@@ -79,6 +79,7 @@ namespace Siemens.SeleniumAdvanceProject
             //wait.IgnoreExceptionTypes(typeof(NoAlertPresentException),typeof(NoSuchElementException));
             wait.IgnoreExceptionTypes(typeof(Exception));
 
+           wait.Until(x => x.SwitchTo().Alert());
           
 
             wait.Until(x => x.FindElement(By.XPath("//*[@id='email']"))).SendKeys("hello33434343@gmail.com");

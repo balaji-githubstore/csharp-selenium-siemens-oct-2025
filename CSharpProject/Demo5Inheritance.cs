@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpProject
 {
-    public class Father
+    public abstract class Father
     {
         public int fAge = 60;
 
@@ -20,6 +20,8 @@ namespace CSharpProject
         {
             Console.WriteLine("father sytle123!!!");
         }
+
+        public abstract void Demo123();
     }
 
     class Son : Father
@@ -31,6 +33,12 @@ namespace CSharpProject
             sAge = s;
             Console.WriteLine("Son constructor");
         }
+
+        public override void Demo123()
+        {
+            Console.WriteLine("heel");
+        }
+
         public void SonStyle()
         {
             Console.WriteLine("Son style");
@@ -50,7 +58,9 @@ namespace CSharpProject
     {
         static void Main(string[] args)
         {
+
            
+
             GrandSon sonObj=new GrandSon(80,40,10);
 
             Console.WriteLine(sonObj.fAge);
@@ -63,6 +73,7 @@ namespace CSharpProject
 
             //sonObj.Equals()
 
+            sonObj.FatherStyle();
 
 
             int a = 111;
